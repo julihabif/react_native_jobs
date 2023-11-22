@@ -1,5 +1,8 @@
 {
   "expo": {
+    "jsEngine": "hermes",
+    "name": "react_native_jobs",
+    "slug": "react_native_jobs",
     "scheme": "acme",
     "web": {
       "bundler": "metro"
@@ -7,7 +10,20 @@
     "plugins": [
       "expo-router"
     ],
-    "name": "react_native_jobs",
-    "slug": "react_native_jobs"
+    "android": {
+      "package": "host.exp.jobs",
+      "jsEngine": "hermes"
+    },
+    "ios": {
+      "bundleIdentifier": "io.expo.jobs"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6929f9d7-fc54-4b4f-bd19-c7cb0247334d"
+      }
+    }
   }
 }
